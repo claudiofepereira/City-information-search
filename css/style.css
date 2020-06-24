@@ -1,0 +1,260 @@
+body {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+input,
+button {
+    font-family: "Arial", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.s130 {
+    height: 100vh;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-family: "Arial", sans-serif;
+    background: url("../images/wallpaper.jpg") center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    padding: 15px;
+}
+
+.s130 form {
+    width: 100%;
+    max-width: 790px;
+    padding-top: 24vh;
+}
+
+.s130 form .inner-form {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 25px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.s130 form .inner-form .input-field {
+    height: 55px;
+}
+
+.s130 form .inner-form .input-field input {
+    height: 100%;
+    background: transparent;
+    border: 0;
+    display: block;
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 18px;
+    color: #000;
+}
+
+/* Remover as linhas na caixa de texto */
+.s130 form .inner-form .input-field input:hover,
+.s130 form .inner-form .input-field input:focus {
+    box-shadow: none;
+    outline: 0;
+}
+
+.s130 form .inner-form .input-field.first-wrap {
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    background: #bfbfbf;
+}
+
+.s130 form .inner-form .input-field.first-wrap .svg-wrapper {
+    min-width: 30px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.s130 form .inner-form .input-field.first-wrap svg {
+    width: 36px;
+    height: 36px;
+    fill: #222;
+}
+
+.s130 form .inner-form .input-field.second-wrap {
+    min-width: 216px;
+}
+
+.s130 form .inner-form .input-field.second-wrap .btn-search {
+    height: 100%;
+    width: 100%;
+    white-space: nowrap;
+    font-size: 16px;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    background: #003366;
+    transition: all 0.2s ease-out, color 0.2s ease-out;
+    font-weight: 300;
+}
+
+.s130 form .inner-form .input-field.second-wrap .btn-search:hover {
+    background: #336699;
+}
+
+.s130 form .inner-form .input-field.second-wrap .btn-search:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.s130 form .info {
+    font-size: 16px;
+    color: #ccc;
+    padding-left: 50px;
+}
+
+@media screen and (max-width: 992px) {
+    .s130 form .inner-form .input-field {
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .s130 form .inner-form .input-field.first-wrap .svg-wrapper {
+        min-width: 40px;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 0 10px;
+    }
+    .s130 form .inner-form .input-field.first-wrap svg {
+        width: 26px;
+        height: 26px;
+        fill: #222;
+    }
+    .s130 form .inner-form .input-field.second-wrap {
+        min-width: 100px;
+    }
+    .s130 form .inner-form .input-field.second-wrap .btn-search {
+        font-size: 16px;
+    }
+}
+
+.city-info-container {
+    width: 96%;
+    height: 65vh;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.info-meteo {
+    width: 40%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    height: 100%;
+    float: left;
+    margin-left: 5%;
+    margin-bottom: 50px;
+    padding-right: 1%;
+    text-align: left;
+    line-height: 1.8;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.info-meteo h2 {
+    padding-top: 80px;
+    text-align: left;
+}
+
+.img-weather {
+    float: right;
+    padding-right: 10%;
+    padding-top: 80px;
+    height: 30%;
+    width: 30%;
+}
+
+.map {
+    margin-left: 50%;
+    height: 100%;
+}
+
+.news-container {
+    width: 96%;
+    height: 65vh;
+    margin: auto;
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-bottom: 20px;
+    display: inline-flex;
+}
+
+.capaNoticia {
+    float: left;
+    padding-right: 2%;
+    width: 40%;
+    height: 65%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.capaNoticia:hover {
+    opacity: 0.7;
+}
+
+/* div of divs of news */
+.news {
+    width: 600px;
+    height: 1200px;
+}
+
+/* divs of news */
+.noticia {
+    width: 800px;
+    height: 300px;
+    margin: 1%;
+    float: left;
+    text-align: left;
+    line-height: 1.5;
+    overflow: scroll;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+.noticiaDesc {
+    padding-top: 3%;
+}
+
+hr {
+    width: 75%;
+    margin: 0 auto;
+}
